@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./css/About.css";
 
 export default class About extends Component {
   render() {
@@ -6,7 +7,7 @@ export default class About extends Component {
       <div>
         <br></br>
         <h1>Who Are We?</h1>
-        <h4>
+        <div>
           Founded in 1993, the Madison Community Band continues a long tradition
           of community bands by providing musical performance opportunities for
           its members and promoting and encouraging the arts community in
@@ -23,8 +24,20 @@ export default class About extends Component {
           band setting, an opportunity that they would not have without the
           community band. The Madison Community Band is an all-volunteer
           organization uniting individuals of different ages and backgrounds for
-          a common passion – musical performance!{" "}
-        </h4>
+          a common passion – musical performance!
+        </div>
+
+        <h2>Our Repertoire Includes</h2>
+        <ul>
+          <li>Traditional Marches</li>
+          <li>Patriotic Music</li>
+          <li>American Favorites</li>
+          <li>Classical Favorites</li>
+          <li>Broadway Tunes</li>
+          <li>TV/Movie Themes</li>
+          <li>Big Band Sounds</li>
+          <li>Christmas Favorites</li>
+        </ul>
 
         <br></br>
         <h1>Officers and Board of Directors</h1>
@@ -39,12 +52,17 @@ export default class About extends Component {
         <h4>Student Representative- Vacant</h4>
 
         <br></br>
+        <h1>Rehearsal Location</h1>
+        <h4>Grace United Methodist Church</h4>
+        <h4>2113 Old Monrovia Rd NW, Huntsville, AL 35806</h4>
+
+        <br></br>
         <h1>Scholarship Program</h1>
-        <h4>
+        <div>
           The Madison Community Band honors the contributions of its youngest
           members through a scholarship program. The $500 scholarship is awarded
           annually to a junior or senior student.
-        </h4>
+        </div>
       </div>
     );
   }

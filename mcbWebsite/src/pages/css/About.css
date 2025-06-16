@@ -1,0 +1,19 @@
+ul {
+    list-style-type: none; /* Removes dots */
+    padding-left: 0; /* Aligns text properly */
+}
+li::before {
+    content: "♪"; /* Music note as a bullet */
+    color: #B22222; /* Dark red theme */
+    font-size: 24px;
+    padding-right: 10px;
+}
+li {
+    line-height: 1.0; /* Brings items closer together */
+}
+ul {
+    list-style-type: none !important;
+}
+ul.navbar-nav li {
+    padding-left: 10px;
+}
