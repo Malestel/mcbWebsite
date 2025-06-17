@@ -1,19 +1,49 @@
 ul {
     list-style-type: none; /* Removes dots */
     padding-left: 0; /* Aligns text properly */
+    text-align: left; /* Ensures list text stays aligned */
 }
 li::before {
     content: "♪"; /* Music note as a bullet */
-    color: #B22222; /* Dark red theme */
+    color: black;
     font-size: 24px;
     padding-right: 10px;
 }
 li {
-    line-height: 1.0; /* Brings items closer together */
+    line-height: 1.4; /* Adjusts spacing for readability */
 }
+/* Corrects list alignment */
+.list-container {
+    display: flex;
+    flex-direction: column; /* Keeps list vertical */
+    align-items: center; /* Centers the list container */
+    width: fit-content; /* Prevents unnecessary stretching */
+    margin: 0 auto; /* Ensures horizontal centering */
+}
+
+.list {
+    color: black;
+    font-size: 24px;
+    padding-right: 10px;
+    display: center;
+    justify-content: center; /* Centers the list */
+    align-items: flex-start; /* Aligns with notes */
+    flex-direction: column; /* Ensures vertical layout */
+}
+
 ul {
+    display: flex;
+    justify-content: center; /* Centers the list horizontally */
+    align-items: flex-start; /* Keeps alignment even with notes */
     list-style-type: none !important;
 }
+
 ul.navbar-nav li {
     padding-left: 10px;
+}
+
+.bodyText{
+    color: black;
+    font-size: 24px;
+    padding-right: 10px;
 }

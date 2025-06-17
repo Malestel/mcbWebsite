@@ -7,7 +7,7 @@ export default class About extends Component {
       <div>
         <br></br>
         <h1>Who Are We?</h1>
-        <div>
+        <div className="bodyText">
           Founded in 1993, the Madison Community Band continues a long tradition
           of community bands by providing musical performance opportunities for
           its members and promoting and encouraging the arts community in
@@ -26,41 +26,44 @@ export default class About extends Component {
           organization uniting individuals of different ages and backgrounds for
           a common passion – musical performance!
         </div>
-
-        <h2>Our Repertoire Includes</h2>
-        <ul>
-          <li>Traditional Marches</li>
-          <li>Patriotic Music</li>
-          <li>American Favorites</li>
-          <li>Classical Favorites</li>
-          <li>Broadway Tunes</li>
-          <li>TV/Movie Themes</li>
-          <li>Big Band Sounds</li>
-          <li>Christmas Favorites</li>
-        </ul>
-
+        <br></br>
+        <h1>Our Repertoire Includes</h1>
+        <div className="list">
+          <ul className="list-container">
+            <li>Traditional Marches</li>
+            <li>Patriotic Music</li>
+            <li>American Favorites</li>
+            <li>Classical Favorites</li>
+            <li>Broadway Tunes</li>
+            <li>TV/Movie Themes</li>
+            <li>Big Band Sounds</li>
+            <li>Christmas Favorites</li>
+          </ul>
+        </div>
         <br></br>
         <h1>Officers and Board of Directors</h1>
-        <h4>President – Vacant</h4>
-        <h4>Vice President – Sara Ann Emerson</h4>
-        <h4>Secretary/Treasurer – Robert Schwartz</h4>
-        <h4>Librarian – Samuel Strong</h4>
-        <h4>Music Director and Conductor– Dave Ryan</h4>
-
+        <div className="bodyText">
+          <div>President – Vacant</div>
+          <div>Vice President – Sara Ann Emerson</div>
+          <div>Secretary/Treasurer – Robert Schwartz</div>
+          <div>Librarian – Samuel Strong</div>
+          <div>Music Director and Conductor– Dave Ryan</div>
+        </div>
         <br></br>
         <h1>Advisors to the Board</h1>
-        <h4>Student Representative- Vacant</h4>
+        <div className="bodyText">Student Representative- Vacant</div>
 
         <br></br>
         <h1>Rehearsal Location</h1>
-        <h4>Grace United Methodist Church</h4>
-        <h4>2113 Old Monrovia Rd NW, Huntsville, AL 35806</h4>
-
+        <div className="bodyText">
+          <div>Grace United Methodist Church</div>
+          <div>2113 Old Monrovia Rd NW, Huntsville, AL 35806</div>
+        </div>
         <br></br>
         <h1>Scholarship Program</h1>
-        <div>
+        <div className="bodyText">
           The Madison Community Band honors the contributions of its youngest
-          members through a scholarship program. The $500 scholarship is awarded
+          members through a scholarship program. The $500 scholarship is awarded
           annually to a junior or senior student.
         </div>
       </div>

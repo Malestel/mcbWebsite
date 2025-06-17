@@ -1,0 +1,28 @@
+.bodyText{
+    color: black;
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center; /* Centers the buttons */
+    gap: 150px; /* Adjust space between buttons */
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black !important; /* Ensure buttons start black */
+    color: white !important; /* Ensure text stays white */
+    border: none;
+    border-radius: 5px; /* Optional rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #484848 !important; /* Lightened black on hover */
+}
+
