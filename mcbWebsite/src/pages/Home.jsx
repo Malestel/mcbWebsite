@@ -16,12 +16,15 @@ export default class Home extends Component {
         <br></br>
         <div className="main-content">
           <div className="bodyText">
-            The Madison Community Band, a 501(c)(3) Nonprofit Public Charity,
-            based in North Alabama, follows a long tradition of community bands.
-            An all-volunteer organization, the band is comprised of musicians of
-            all ages and backgrounds. The Madison Community Band performs
-            annually for various events throughout the Tennessee Valley,
-            including Huntsville’s Panoply of the Arts, Madison’s Gazebo
+            The Madison Community Band, a{" "}
+            <a href="./src/resources/mcb_irs_determination_letter.jpg">
+              501(c)(3) Nonprofit Public Charity
+            </a>{" "}
+            , based in North Alabama, follows a long tradition of community
+            bands. An all-volunteer organization, the band is comprised of
+            musicians of all ages and backgrounds. The Madison Community Band
+            performs annually for various events throughout the Tennessee
+            Valley, including Huntsville’s Panoply of the Arts, Madison’s Gazebo
             Concerts, Decatur’s Concerts by the River, and the Host of Christmas
             Past Festival in Fayetteville , TN. We have also been honored to
             perform at the US Space and Rocket Center, the Lakeside Summer
