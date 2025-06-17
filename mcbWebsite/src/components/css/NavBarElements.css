@@ -1,0 +1,12 @@
+.dropdown-menu {
+  background-color: #212529 !important; /* Matches dark navbar */
+  border: none;
+}
+
+.dropdown-item {
+  color: white !important; /* Ensures text is visible */
+}
+
+.dropdown-item:hover {
+  background-color: #495057 !important; /* Slightly lighter hover effect */
+}
