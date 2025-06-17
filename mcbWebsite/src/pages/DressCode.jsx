@@ -6,7 +6,9 @@ export default class DressCode extends Component {
     return (
       <div className="main-content">
         <h1>MCB Dress Code</h1>
+        <br></br>
         <h3>Attire Definitions</h3>
+        <br></br>
         <div className="list">
           <ul className="list-container">
             <li>
