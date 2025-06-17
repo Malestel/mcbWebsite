@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./css/Home.css";
+import { rehearsalData } from "./rehearsalData";
 
 export default class Home extends Component {
   render() {
@@ -29,145 +30,59 @@ export default class Home extends Component {
           <br></br>
           <br></br>
           <h1>See MCB In Concert!</h1>
-          <div class="columnList-container">
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
+          <div className="columnList-container">
+            <div className="columnList-item">
+              <div className="columnList-date">July 29, 2025</div>
+              <div className="columnList-location">
                 Grace United Methodist Church
               </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
+              <div className="columnList-location">Huntsville, AL</div>
+              <div className="columnList-location">Call time – 6:30PM</div>
+              <div className="columnList-location">
+                Performance time – 7:00PM
+              </div>
             </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
+            <div className="columnList-item">
+              <div className="columnList-date">July 29, 2025</div>
+              <div className="columnList-location">
                 Grace United Methodist Church
               </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
+              <div className="columnList-location">Huntsville, AL</div>
+              <div className="columnList-location">Call time – 6:30PM</div>
+              <div className="columnList-location">
+                Performance time – 7:00PM
+              </div>
             </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
+            <div className="columnList-item">
+              <div className="columnList-date">July 29, 2025</div>
+              <div className="columnList-location">
                 Grace United Methodist Church
               </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
+              <div className="columnList-location">Huntsville, AL</div>
+              <div className="columnList-location">Call time – 6:30PM</div>
+              <div className="columnList-location">
+                Performance time – 7:00PM
+              </div>
             </div>
           </div>
+          {/* Rehearsals Section */}
           <h1>Come Rehearse With Us!</h1>
-          <div class="columnList-container">
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
-                Grace United Methodist Church
+          <div className="columnList-container">
+            {Object.keys(rehearsalData).map((month) => (
+              <div key={month}>
+                <h3>{month}</h3>
+                {rehearsalData[month].map((rehearsal, index) => (
+                  <div key={index} className="columnList-item">
+                    <div className="columnList-date">{rehearsal.date}</div>
+                    <div className="columnList-location">{rehearsal.type}</div>
+                    <div className="columnList-location">
+                      {rehearsal.location}
+                    </div>
+                    <div className="columnList-location">{rehearsal.time}</div>
+                  </div>
+                ))}
               </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
-            </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
-                Grace United Methodist Church
-              </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
-            </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
-                Grace United Methodist Church
-              </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
-            </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
-                Grace United Methodist Church
-              </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
-            </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
-                Grace United Methodist Church
-              </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
-            </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
-                Grace United Methodist Church
-              </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
-            </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
-                Grace United Methodist Church
-              </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
-            </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
-                Grace United Methodist Church
-              </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
-            </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
-                Grace United Methodist Church
-              </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
-            </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
-                Grace United Methodist Church
-              </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
-            </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
-                Grace United Methodist Church
-              </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
-            </div>
-            <div class="columnList-item">
-              <div class="columnList-date">July 29, 2025</div>
-              <div class="columnList-location">
-                Grace United Methodist Church
-              </div>
-              <div class="columnList-location">Huntsville, AL</div>
-              <div class="columnList-location">Call time – 6:30PM</div>
-              <div class="columnList-location">Performance time – 7:00PM</div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

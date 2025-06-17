@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import About from "../pages/About";
 import Home from "../pages/Home";
 import JoinMCB from "../pages/JoinMCB";
+import Members from "../pages/Members";
 
 export default class NavbarComp extends Component {
   render() {
@@ -29,6 +30,9 @@ export default class NavbarComp extends Component {
                 <Nav.Link as={Link} to="/joinMCB">
                   Join MCB
                 </Nav.Link>
+                <Nav.Link as={Link} to="/Members">
+                  Members
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -39,6 +43,7 @@ export default class NavbarComp extends Component {
             <Route path="/about" element={<About />} />
             <Route path="/home" element={<Home />} />
             <Route path="/joinMCB" element={<JoinMCB />} />
+            <Route path="/members" element={<Members />} />
           </Routes>
         </div>
       </Router>
