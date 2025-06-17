@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import "./css/standardStyle.css";
 import "./css/Home.css";
-import { rehearsalData } from "./rehearsalData";
+import { rehearsalData } from "./data/rehearsalData";
 
 export default class Home extends Component {
   render() {

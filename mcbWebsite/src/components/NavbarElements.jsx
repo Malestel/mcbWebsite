@@ -7,6 +7,8 @@ import Home from "../pages/Home";
 import JoinMCB from "../pages/JoinMCB";
 import Members from "../pages/Members";
 import Scholarship from "../pages/Scholarship";
+import DressCode from "../pages/DressCode";
+import SupportMCB from "../pages/SupportMCB";
 
 export default class NavbarComp extends Component {
   render() {
@@ -31,7 +33,6 @@ export default class NavbarComp extends Component {
                   <Nav.Link as={Link} to="/members">
                     Members
                   </Nav.Link>
-                  {/* Dropdown for Members */}
                   <Dropdown align="end">
                     <Dropdown.Toggle variant="dark" id="dropdown-basic">
                       Member Resources
@@ -43,6 +44,9 @@ export default class NavbarComp extends Component {
                         rel="noopener noreferrer"
                       >
                         By-Laws
+                      </Dropdown.Item>
+                      <Dropdown.Item as={Link} to="/DressCode">
+                        Dress Code
                       </Dropdown.Item>
                       <Dropdown.Item
                         href="/src/resources/mcb_irs_determination_letter.jpg"
@@ -56,6 +60,9 @@ export default class NavbarComp extends Component {
                       </Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
+                  <Nav.Link as={Link} to="/supportMCB">
+                    Support MCB
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </div>
@@ -69,6 +76,8 @@ export default class NavbarComp extends Component {
             <Route path="/joinMCB" element={<JoinMCB />} />
             <Route path="/members" element={<Members />} />
             <Route path="/scholarship" element={<Scholarship />} />
+            <Route path="/dresscode" element={<DressCode />} />
+            <Route path="/supportMCB" element={<SupportMCB />} />
           </Routes>
         </div>
       </Router>

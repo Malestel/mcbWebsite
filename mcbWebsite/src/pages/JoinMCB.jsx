@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import "./css/standardStyle.css";
 import "./css/JoinMCB.css";
 
 export default class JoinMCB extends Component {
   render() {
     return (
       <div>
+        <h2>Want To Join MCB?</h2>
+        <br></br>
         <div className="bodyText">
           If you are interested in joining the “100 Acre Band” i.e. the Madison
           Community Band and have at least two years of playing experience or
@@ -20,6 +23,7 @@ export default class JoinMCB extends Component {
           For more information about the band or for booking information,
           contact:
         </h2>
+        <br></br>
         <div className="bodyText">
           <div>Dave Ryan Music Director and Conductor</div>
           <div>Phone: 256-617-9484</div>
@@ -39,7 +43,10 @@ export default class JoinMCB extends Component {
         <br></br>
         <br></br>
         <h2>
-          The Madison Community Band is a 501(c)(3) Nonprofit Public Charity{" "}
+          The Madison Community Band is a{" "}
+          <a href="./src/resources/mcb_irs_determination_letter.jpg">
+            501(c)(3) Nonprofit Public Charity
+          </a>{" "}
         </h2>
       </div>
     );

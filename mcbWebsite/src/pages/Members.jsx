@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import "./css/standardStyle.css";
 import "./css/Members.css";
-import { membersList } from "./membersData";
+import { membersList } from "./data/membersData";
 
 export default class Members extends Component {
   render() {
@@ -13,7 +14,8 @@ export default class Members extends Component {
           “family” atmosphere. We believe that each member plays a significant
           role in the success of the group and all are treated accordingly.
         </div>
-
+        <br></br>
+        <br></br>
         <h1>Our Members</h1>
 
         {/* Dynamically Render Member Sections */}

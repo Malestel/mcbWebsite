@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./css/standardStyle.css";
 import "./css/About.css";
 
 export default class About extends Component {
@@ -6,7 +7,9 @@ export default class About extends Component {
     return (
       <div>
         <br></br>
+        <br></br>
         <h1>Who Are We?</h1>
+        <br></br>
         <div className="bodyText">
           Founded in 1993, the Madison Community Band continues a long tradition
           of community bands by providing musical performance opportunities for
@@ -27,7 +30,9 @@ export default class About extends Component {
           a common passion – musical performance!
         </div>
         <br></br>
+        <br></br>
         <h1>Our Repertoire Includes</h1>
+        <br></br>
         <div className="list">
           <ul className="list-container">
             <li>Traditional Marches</li>
@@ -41,7 +46,9 @@ export default class About extends Component {
           </ul>
         </div>
         <br></br>
+        <br></br>
         <h1>Officers and Board of Directors</h1>
+        <br></br>
         <div className="bodyText">
           <div>President – Vacant</div>
           <div>Vice President – Sara Ann Emerson</div>
@@ -50,22 +57,32 @@ export default class About extends Component {
           <div>Music Director and Conductor– Dave Ryan</div>
         </div>
         <br></br>
+        <br></br>
         <h1>Advisors to the Board</h1>
+        <br></br>
         <div className="bodyText">Student Representative- Vacant</div>
-
+        <br></br>
         <br></br>
         <h1>Rehearsal Location</h1>
+        <br></br>
         <div className="bodyText">
           <div>Grace United Methodist Church</div>
           <div>2113 Old Monrovia Rd NW, Huntsville, AL 35806</div>
         </div>
         <br></br>
+        <br></br>
         <h1>Scholarship Program</h1>
+        <br></br>
         <div className="bodyText">
           The Madison Community Band honors the contributions of its youngest
-          members through a scholarship program. The $500 scholarship is awarded
-          annually to a junior or senior student.
+          members through a scholarship program. The $500{" "}
+          <a href="./src/resources/MCB-Scholarship-Program-Requirements-20230201.pdf">
+            scholarship
+          </a>{" "}
+          is awarded annually to a junior or senior student.
         </div>
+        <br></br>
+        <br></br>
       </div>
     );
   }

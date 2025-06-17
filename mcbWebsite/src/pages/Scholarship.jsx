@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import "./css/Members.css";
-import { membersList } from "./membersData";
+import "./css/standardStyle.css";
 
 export default class Scholarship extends Component {
   render() {
