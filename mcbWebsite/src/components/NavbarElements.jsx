@@ -61,6 +61,33 @@ export default class NavbarComp extends Component {
                       </Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
+                  <Dropdown align="end">
+                    <Dropdown.Toggle
+                      className="bg-dark text-light border-0"
+                      id="dropdown-basic"
+                    >
+                      Archive
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <Dropdown.Item
+                        href="/src/resources/mcbbylaws_20230201.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Past Performances
+                      </Dropdown.Item>
+                      <Dropdown.Item as={Link} to="/DressCode">
+                        News Archive
+                      </Dropdown.Item>
+                      <Dropdown.Item
+                        href="/src/resources/mcb_irs_determination_letter.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Photo Archive
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
                   <Nav.Link as={Link} to="/supportMCB">
                     Support MCB
                   </Nav.Link>

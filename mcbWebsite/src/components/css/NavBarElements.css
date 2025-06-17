@@ -4,9 +4,32 @@
 }
 
 .dropdown-item {
-  color: white !important; /* Ensures text is visible */
+  color: rgba(179, 179, 179, 0.75) !important; /* Matches navbar link color */
 }
 
 .dropdown-item:hover {
-  background-color: #495057 !important; /* Slightly lighter hover effect */
+  color: white !important; /* Ensures the text highlights on hover */
+  background-color: transparent !important; /* No background highlight */
+}
+
+#dropdown-basic {
+  background-color: #212529 !important; /* Matches navbar */
+  color: rgba(179, 179, 179, 0.75) !important; /* Matches navbar link color */
+  border: none;
+  font-size: 16px;
+}
+
+#dropdown-basic:hover {
+  background-color: transparent !important; /* Slightly lighter on hover */
+  color: white !important; /* Ensures text brightens on hover */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Aligns everything vertically */
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
 }
