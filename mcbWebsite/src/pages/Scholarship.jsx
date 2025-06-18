@@ -13,7 +13,10 @@ export default class Scholarship extends Component {
         </div>
         <br></br>
         <div className="button-group">
-          <a href="./src/resources/MCB-Scholarship-Program-Requirements-20230201.pdf">
+          <a
+            href="mcbWebsite/resources/MCB-Scholarship-Program-Requirements-20230201.pdf"
+            target="_blank"
+          >
             <button>Click For More Information</button>
           </a>
         </div>

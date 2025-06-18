@@ -9,7 +9,7 @@ export default class Home extends Component {
       <div>
         <div className="image-container">
           <img
-            src="./src/assets/flagPicCrop.jpg"
+            src="mcbWebsite/mcbWebsite/src/assets/flagPicCrop.jpg"
             alt="Madison Community Band"
           />
         </div>
