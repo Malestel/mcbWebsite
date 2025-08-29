@@ -50,8 +50,8 @@ export default class About extends Component {
         <h1>Officers and Board of Directors</h1>
         <br></br>
         <div className="bodyText">
-          <div>President – Vacant</div>
-          <div>Vice President – Sara Ann Emerson</div>
+          <div>President – Sara Ann Emerson</div>
+          <div>Vice President – Thomas Scripture</div>
           <div>Secretary/Treasurer – Robert Schwartz</div>
           <div>Librarian – Samuel Strong</div>
           <div>Music Director and Conductor– Dave Ryan</div>
