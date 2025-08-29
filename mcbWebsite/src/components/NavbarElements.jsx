@@ -18,13 +18,11 @@ export default class NavbarComp extends Component {
         <div>
           <Navbar bg="dark" fixed="top" variant="dark" expand="lg">
             <div className="container-fluid">
-              <Navbar.Brand href="/mcbWebsite">
-                Madison Community Band
-              </Navbar.Brand>
+              <Navbar.Brand href="/home">Madison Community Band</Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
                 <Nav className="ms-auto my-2 my-lg-0" navbarScroll>
-                  <Nav.Link as={Link} to="/mcbWebsite">
+                  <Nav.Link as={Link} to="/home">
                     Home
                   </Nav.Link>
                   <Nav.Link as={Link} to="/about">
@@ -102,7 +100,7 @@ export default class NavbarComp extends Component {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/mcbWebsite" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/joinMCB" element={<JoinMCB />} />
             <Route path="/members" element={<Members />} />
             <Route path="/scholarship" element={<Scholarship />} />
